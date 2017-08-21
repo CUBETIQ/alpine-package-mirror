@@ -40,6 +40,8 @@ x86/
 
 edge+v2.*+v3.x is alpine version,aarch64,armhf,ppc64le,s390x,x86,x86_64 is cpu architecture.
 
+e.g. v3.6 + x86_64  only 11 GB
+
 run this code to check your cpu architecture.
 
 ```bash
