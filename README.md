@@ -62,6 +62,11 @@ COPY     ./conf/rsync.sh /etc/periodic/hourly/package-rsync
 
 it will sync every hour. (given cron runs). you can change it to daily , weekly or monthly.
 
+## docker hub
+
+```bash
+docker pull anjia0532/alpine-package-mirror
+```
 
 [How_to_setup_a_Alpine_Linux_mirror]: http://wiki.alpinelinux.org/wiki/How_to_setup_a_Alpine_Linux_mirror
 [Alpine_Linux_package_management]: http://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
