@@ -4,7 +4,7 @@
 FROM    alpine:3.6
 MAINTAINER  Daniel Nephin <dnephin@gmail.com>
 
-RUN     apk update && apk add lighttpd
+RUN     apk update && apk --no-cache add lighttpd
 ADD     lighttpd.conf /etc/lighttpd/lighttpd.conf
 CMD     ["lighttpd", "-f", "/etc/lighttpd/lighttpd.conf", "-D"]
 EXPOSE  80
