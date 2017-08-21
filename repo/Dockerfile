@@ -4,7 +4,7 @@
 FROM    alpine:3.6
 MAINTAINER  Daniel Nephin <dnephin@gmail.com>
 
-RUN     apk update && apk add rsync
+RUN     apk update && apk --no-cache add rsync
 RUN     mkdir -p /var/www/localhost/htdocs/alpine
 
 ADD     rsync.sh /etc/periodic/hourly/package-rsync
