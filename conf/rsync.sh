@@ -9,12 +9,12 @@ if [ -z "$flock" ] ; then
 fi
 
 src=rsync://rsync.alpinelinux.org/alpine/ 
-dest=/var/www/localhost/htdocs/alpine/
+dest=/usr/share/nginx/html
 
 /usr/bin/rsync -prua \
     --exclude-from /etc/rsync/exclude.txt \
     --delete \
-    --timeout=120 \
+    --timeout=600 \
     --delay-updates \
     --delete-after \
     "$src" "$dest"
